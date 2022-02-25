@@ -80,7 +80,7 @@ namespace IotEdgeModuleTutorialCICD
                     foreach (var prop in message.Properties)
                     {
                         pipeMessage.Properties.Add(prop.Key, prop.Value);
-                        pipeMessage.Properties.Add("ClavePrueba", "1234");
+                        //pipeMessage.Properties.Add("ClavePrueba", "1234");
                     }
                     await moduleClient.SendEventAsync("output1", pipeMessage);
 
